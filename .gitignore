@@ -422,7 +422,7 @@ node_modules
 .dat*
 .repl_history
 build/
-
+package-lock.json
 ## Documentation cache and generated files:
 /.yardoc/
 /_yardoc/
