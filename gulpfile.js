@@ -13,7 +13,7 @@ gulp.task('sass', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('main.css'))
         .pipe(uglifycss())
-        .pipe(autoprefixer())
+        .pipe(autoprefixer('last 2 versions'))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('assets/css'));
 });
