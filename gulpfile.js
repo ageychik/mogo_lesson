@@ -4,6 +4,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const uglifycss = require('gulp-uglifycss');
 const concat = require('gulp-concat');
+const connect = require('gulp-connect');
 
 sass.compiler = require('node-sass');
 
@@ -18,10 +19,14 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('assets/css'));
 });
 
+gulp.task('connect', function() {
+    connect.server();
+});
+
 gulp.task('watch', function () {
     gulp.watch('assets/scss/**/*.scss', ['sass']);
 });
 
 gulp.task('build', ['sass']);
 
-gulp.task('default', ['build', 'watch']);
+gulp.task('default', ['build', 'connect', 'watch']);
