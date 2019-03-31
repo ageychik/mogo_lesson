@@ -1,0 +1,26 @@
+.section-content{
+  width: 83%;
+  margin: auto;
+  .section-content-sub-title{
+    font: 24px $fontKaushan;
+    margin-bottom: 10px;
+  }
+  .section-content-title{
+    font: 700 30px $fontMontserrat;
+    text-transform: uppercase;
+
+    &:after{
+      content: '';
+      width: 60px;
+      height: 3px;
+      background: #f38181;
+      display: block;
+      margin: 33px auto 41px;
+    }
+  }
+  .section-content-description{
+    font: 15px/1.6 $fontRoboto;
+    color: #999;
+    margin-bottom: 50px;
+  }
+}

@@ -1,6 +1,6 @@
 .section-banner{
-  width: 100vw;
   height: 100vh;
+  padding: 0;
   .banner-slider{
     height: 100%;
     position: relative;
@@ -79,6 +79,7 @@
     .banner-controls-item{
       cursor: pointer;
       color: #fff;
+      text-align: left;
       &.active{
         cursor: default;
         .banner-controls-item-timer,

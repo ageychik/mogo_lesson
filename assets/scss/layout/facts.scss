@@ -1,0 +1,23 @@
+.section-facts{
+  padding: 0;
+  background: #95e1d3;
+  color: #fff;
+  .section-facts-box{
+    margin: 0;
+    .section-facts-item{
+      border-right: 1px solid #b5eae0;
+      padding: 69px 0 85px;
+      &:first-of-type{
+        border-left: 1px solid #b5eae0;
+      }
+      .number{
+        font: 700 72px $fontMontserrat;
+        margin-bottom: 10px;
+      }
+      .description{
+        font: 14px $fontMontserrat;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
