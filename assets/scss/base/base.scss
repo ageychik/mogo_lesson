@@ -6,6 +6,7 @@ body {
   color: #333;
   text-align: center;
   padding: 80px 0;
+  position: relative;
 }
 
 .container {
@@ -36,6 +37,10 @@ body {
 
   &.column-3 {
     width: 33.3%;
+  }
+
+  &.column-2 {
+    width: 50%;
   }
 }
 

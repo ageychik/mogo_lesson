@@ -1,0 +1,99 @@
+.section-service{
+  .service-main{
+    margin-top: -25px;
+    .service-line{
+      text-align: left;
+      padding: 47px 0 49px;
+      &:first-of-type{
+        border-bottom: 1px solid #e5e5e5;
+      }
+      .service-line-item{
+        .service-icon-box{
+          float: left;
+          width: 32px;
+          height: 32px;
+          padding: 3px 15px;
+          box-sizing: content-box;
+        }
+        .service-desc-box{
+          overflow: hidden;
+          .title{
+            font: 14px $fontMontserrat;
+            color: #333333;
+            text-transform: uppercase;
+            margin-bottom: 9px;
+          }
+          .description{
+            font: 15px/1.6 $fontRoboto;
+            color: #999;
+          }
+        }
+      }
+    }
+  }
+}
+.section-second-service{
+  .second-service{
+    display: flex;
+    .second-service-image{
+      background-size: cover;
+      background-position: center;
+    }
+    .second-service-accordion{
+      text-align: left;
+      h3{
+        border: 1px solid #e5e5e5;
+        font: 14px $fontMontserrat;
+        text-transform: uppercase;
+        padding: 15px;
+        margin-bottom: 10px;
+        position: relative;
+        outline: none;
+        span.accordion-ico{
+          width: 32px;
+          height: 32px;
+          display: inline-block;
+          vertical-align: middle;
+          svg{
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+        &.ui-accordion-header-active{
+          margin: 0;
+          &:after{
+            transform: rotate(0);
+          }
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 20px;
+          margin: auto;
+          width: 22px;
+          height: 12px;
+          background: url(../svg/arrow-top.svg);
+          transform: rotate(180deg);
+          transition: all .3s;
+        }
+      }
+      .second-service-accordion-itm{
+        height: 180px;
+        border: 1px solid #e5e5e5;
+        border-top: none;
+        font: italic 15px/1.6 $fontRoboto;
+        color: #999;
+        margin-bottom: 10px;
+        padding: 15px 20px;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
