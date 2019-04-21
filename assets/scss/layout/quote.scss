@@ -1,0 +1,43 @@
+.section-quote{
+  background: #f8f8f8;
+  text-align: left;
+  padding: 57px 0;
+}
+
+.quote-slider{
+  .quote-slide{
+    .quote-slide-icon{
+      border: 3px solid #95e1d3;
+      padding: 40px;
+      max-width: 150px;
+      max-height: 150px;
+      margin: auto;
+      svg{
+        width: 63px;
+        height: 61px;
+      }
+    }
+    .quote-slide-main{
+      blockquote{
+        font: italic 300 24px/1.5 $fontRoboto;
+        color: #999;
+        margin-bottom: 13px;
+      }
+      .signature{
+        font: 24px $fontKaushan;
+        color: #333;
+        position: relative;
+        vertical-align: middle;
+        &:before{
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px;
+          width: 60px;
+          height: 3px;
+          background: #f38181;
+        }
+      }
+    }
+  }
+}
