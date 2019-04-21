@@ -5,6 +5,9 @@ $(function() {
         $( ".second-service-accordion" ).accordion();
         header();
         event();
+        $('.slick-slider').each(function () {
+            $(this).slick();
+        })
     })();
 
 

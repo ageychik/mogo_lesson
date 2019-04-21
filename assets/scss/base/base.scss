@@ -27,6 +27,9 @@ body {
   vertical-align: top;
   padding: 0 15px;
   font-size: 16px;
+  &.column-3_4{
+    width: 75%;
+  }
   &.column-5{
     width: 20%;
   }
