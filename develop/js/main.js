@@ -24,4 +24,3 @@ $(function() {
         header.toggleClass('fixed', $(window).scrollTop() > 0);
     }
 });
-//# sourceMappingURL=maps/main.js.map
