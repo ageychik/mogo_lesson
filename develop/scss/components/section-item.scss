@@ -10,12 +10,11 @@
         }
       }
     }
-    a{
+    .section-item-link{
       display: block;
       color: #fff;
       background-size: cover;
       background-position: center;
-      padding-top: calc(100% * 0.6952);
       position: relative;
       transition: all .3s;
       .section-item-box{
@@ -33,19 +32,48 @@
         .section-item-content{
           position: absolute;
           top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          svg{
-            width: 32px;
-            height: 24px;
-          }
-          span{
-            font: 700 18px $fontMontserrat;
-            text-transform: uppercase;
-            display: block;
+          left: 0;
+          right: 0;
+          transform: translateY(-50%);
+          font-size: 0;
+          .section-item-social{
+            width: 55px;
+            height: 56px;
+            display: inline-block;
+            vertical-align: top;
+            background: #fce38a;
+            position: relative;
+            margin-right: 1px;
+            transition: all .3s;
+            &:hover{
+              background: #f38181;
+            }
           }
         }
       }
     }
+    .section-item-desc{
+      padding: 27px 0;
+      .name{
+        font: 14px $fontMontserrat;
+        text-transform: uppercase;
+        color: #333;
+        margin-bottom: 8px;
+      }
+      .position{
+        font: italic 15px $fontRoboto;
+        color: #999;
+      }
+    }
+  }
+  svg{
+    max-width: 100%;
+    max-height: 100%;
+    fill: #fff;
+  }
+  span{
+    font: 700 18px $fontMontserrat;
+    text-transform: uppercase;
+    display: block;
   }
 }

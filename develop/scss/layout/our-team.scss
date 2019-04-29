@@ -1,0 +1,25 @@
+.section-our-team{
+  padding: 94px 0 50px;
+  .our-team-main{
+    padding: 40px 0;
+    .our-team-item{
+      .section-item-link{
+        padding-top: calc(100% * 1.2421);
+      }
+      svg{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        fill: #f38181;
+      }
+      .section-item-social:hover{
+        svg{
+          fill: #fff;
+        }
+      }
+    }
+  }
+}
