@@ -8,7 +8,6 @@ $(function() {
         $('.slick-slider').each(function () {
             $(this).slick();
         })
-        console.log('asfdasfd')
     })();
 
 

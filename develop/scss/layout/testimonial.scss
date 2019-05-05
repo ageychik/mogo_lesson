@@ -1,0 +1,25 @@
+.section-testimonial{
+  text-align: left;
+  padding: 86px 0 130px;
+
+}
+
+.testimonial-slider{
+  .testimonial-slide{
+    .testimonial-slide-avatar{
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      overflow: hidden;
+      img{
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    .testimonial-slide-main{
+      blockquote{
+        padding-top: 33px;
+      }
+    }
+  }
+}

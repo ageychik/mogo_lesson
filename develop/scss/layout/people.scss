@@ -1,0 +1,72 @@
+.section-people{
+  background: url(../img/people-bg.jpg);
+  max-height: 850px;
+  padding: 104px 0 15px;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255,255,255,.85);
+  }
+  & > * {
+    position: relative;
+  }
+  .people{
+    font-size: 0;
+    padding: 45px 0;
+    .people-item{
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 40px;
+      margin-bottom: 64px;
+      .people-avatar{
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: top;
+        img{
+          max-height: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+    .people-main{
+      text-align: left;
+      font-size: 16px;
+      display: inline-block;
+      vertical-align: top;
+      width: calc(100% - 110px);
+      padding-top: 9px;
+      padding-left: 30px;
+      .title{
+        font: 500 14px $fontMontserrat;
+        text-transform: uppercase;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      .position{
+        font: italic 15px $fontRoboto;
+        color: #333;
+        &:after{
+          content: '';
+          width: 60px;
+          height: 3px;
+          background: #f38181;
+          display: block;
+          margin: 16px 0 20px;
+        }
+      }
+      .description{
+        font: 15px/1.6 $fontRoboto;
+        color: #999;
+      }
+    }
+  }
+
+}

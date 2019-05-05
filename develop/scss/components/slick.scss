@@ -1,4 +1,6 @@
+.dev-slider,
 .slick-slider{
+  text-align: left;
   overflow: hidden;
   position: relative;
   .slick-arrow{
@@ -34,9 +36,26 @@
       }
     }
   }
-  .slick-list{
-    .slick-track{
-
+  .slick-main{
+    blockquote{
+      font: italic 300 24px/1.5 $fontRoboto;
+      color: #999;
+      margin-bottom: 13px;
+    }
+    .signature{
+      font: 24px $fontKaushan;
+      color: #333;
+      position: relative;
+      vertical-align: middle;
+      &:before{
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        width: 60px;
+        height: 3px;
+        background: #f38181;
+      }
     }
   }
 }
