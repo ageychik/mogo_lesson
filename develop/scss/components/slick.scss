@@ -39,12 +39,12 @@
   .slick-main{
     blockquote{
       font: italic 300 24px/1.5 $fontRoboto;
-      color: #999;
+      color: $colorLGray;
       margin-bottom: 13px;
     }
     .signature{
       font: 24px $fontKaushan;
-      color: #333;
+      color: $colorSGray;
       position: relative;
       vertical-align: middle;
       &:before{

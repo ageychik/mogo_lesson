@@ -19,13 +19,13 @@
           overflow: hidden;
           .title{
             font: 14px $fontMontserrat;
-            color: #333333;
+            color: $colorSGray;
             text-transform: uppercase;
             margin-bottom: 9px;
           }
           .description{
             font: 15px/1.6 $fontRoboto;
-            color: #999;
+            color: $colorLGray;
           }
         }
       }
@@ -87,7 +87,7 @@
         border: 1px solid #e5e5e5;
         border-top: none;
         font: italic 15px/1.6 $fontRoboto;
-        color: #999;
+        color: $colorLGray;
         margin-bottom: 10px;
         padding: 15px 20px;
         &:last-of-type{

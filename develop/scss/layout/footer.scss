@@ -1,0 +1,170 @@
+.section-footer{
+  background: #f8f8f8;
+  padding: 75px 0 0;
+  .footer-main{
+    text-align: left;
+    margin-bottom: 35px;
+    .footer-column{
+      .footer-column-title{
+        font: 500 14px $fontMontserrat;
+        color: $colorSGray;
+        text-transform: uppercase;
+        margin-bottom: 37px;
+
+      }
+      &.footer-description{
+        width: 42%;
+        .footer-logo{
+          margin-bottom: 32px;
+        }
+        .description{
+          font: 15px/1.6 $fontRoboto;
+          color: $colorLGray;
+          max-width: 95%;
+          margin-bottom: 44px;
+        }
+        .footer-social{
+          .footer-social-number{
+            font: 14px $fontMontserrat;
+            margin-bottom: 13px;
+            span{
+              font-weight: bold;
+              font-size: 18px;
+              margin-right: 3px;
+            }
+          }
+          .footer-social-main{
+            font-size: 0;
+            border-top: 1px solid #e5e5e5;
+            padding: 16px 0 36px;
+            span{
+              font: italic 15px $fontRoboto;
+              color: $colorLGray;
+              vertical-align: middle;
+              margin-right: 8px;
+            }
+            .footer-social-icon{
+              display: inline-block;
+              vertical-align: middle;
+              width: 16px;
+              height: 16px;
+              position: relative;
+              margin: 0 7px;
+
+              svg{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 100%;
+                max-height: 100%;
+                fill: $colorGreen;
+                transition: all .3s;
+              }
+              &:hover svg{
+                fill: $colorLGray;
+              }
+            }
+          }
+        }
+        .footer-subscribe{
+          font-size: 0;
+          input{
+            border: 1px solid #e7e7e7;
+            border-right-color: transparent;
+            width: 205px;
+            padding: 13px 11px 10px;
+            &::placeholder{
+              font: italic 15px $fontRoboto;
+            }
+          }
+          button{
+            font: bold 14px $fontMontserrat;
+            color: #fff;
+            text-transform: uppercase;
+            background: $colorGreen;
+            padding: 11px 32px 10px;
+            transition: all .3s;
+            &:hover{
+              background: $colorLGray;
+            }
+          }
+        }
+      }
+      &.footer-blog{
+        width: 34%;
+        .footer-blog-item{
+          font-size: 0;
+          margin-bottom: 30px;
+          .footer-blog-img{
+            display: inline-block;
+            vertical-align: top;
+            width: 120px;
+            img{
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+          .footer-blog-main{
+            display: inline-block;
+            vertical-align: top;
+            width:calc(100% - 120px);
+            padding: 17px 20px 0;
+            .footer-blog-title{
+              font: 12px/1.5 $fontMontserrat;
+              color: $colorSGray;
+              text-transform: uppercase;
+              text-decoration: none;
+              margin-bottom: 5px;
+              display: inline-block;
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+            .footer-blog-date{
+              font: italic 300 13px $fontRoboto;
+              color: $colorLGray;
+            }
+          }
+        }
+      }
+      &.footer-instagram{
+        width: 24%;
+        .footer-instagram-main{
+          font-size: 0;
+          margin-bottom: 16px;
+          .footer-instagram-img{
+            display: inline-block;
+            width: 33.3%;
+            padding: 1px;
+            img{
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+        }
+        .footer-instagram-more{
+          font: italic 300 13px $fontRoboto;
+          color: $colorSGray;
+          text-decoration: none;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .footer-copy{
+    font: 600 14px $fontMontserrat;
+    color: $colorSGray;
+    border-top: 1px solid #e5e5e5;
+    padding: 21px 0;
+    a{
+      color: #f38181;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}

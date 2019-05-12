@@ -21,10 +21,10 @@
     }
     .header-nav{
       a{
-        color: #333;
-        fill: #333;
+        color: $colorSGray;
+        fill: $colorSGray;
         &:hover{
-          border-bottom-color: #333;
+          border-bottom-color: $colorSGray;
         }
       }
     }

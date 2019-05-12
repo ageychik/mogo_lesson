@@ -4,7 +4,7 @@
     &:hover{
       a{
         transform: translate(-10px, -10px);
-        box-shadow: 10px 10px #95e1d3;
+        box-shadow: 10px 10px $colorGreen;
         .section-item-box{
           opacity: 1;
         }
@@ -57,12 +57,12 @@
       .name{
         font: 14px $fontMontserrat;
         text-transform: uppercase;
-        color: #333;
+        color: $colorSGray;
         margin-bottom: 8px;
       }
       .position{
         font: italic 15px $fontRoboto;
-        color: #999;
+        color: $colorLGray;
       }
     }
   }
