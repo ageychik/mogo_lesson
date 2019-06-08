@@ -38,6 +38,7 @@
     .second-service-image{
       background-size: cover;
       background-position: center;
+      height: 100%;
     }
     .second-service-accordion{
       text-align: left;
@@ -46,9 +47,13 @@
         font: 14px $fontMontserrat;
         text-transform: uppercase;
         padding: 15px;
-        margin-bottom: 10px;
+        margin-top: 10px;
         position: relative;
+        cursor: pointer;
         outline: none;
+        &:first-of-type{
+          margin-top: 0;
+        }
         span.accordion-ico{
           width: 32px;
           height: 32px;
@@ -59,11 +64,7 @@
             max-height: 100%;
           }
         }
-        &:last-of-type{
-          margin-bottom: 0;
-        }
         &.ui-accordion-header-active{
-          margin: 0;
           &:after{
             transform: rotate(0);
           }
@@ -84,14 +85,15 @@
       }
       .second-service-accordion-itm{
         height: 180px;
-        border: 1px solid #e5e5e5;
-        border-top: none;
+
         font: italic 15px/1.6 $fontRoboto;
         color: $colorLGray;
-        margin-bottom: 10px;
-        padding: 15px 20px;
-        &:last-of-type{
-          margin-bottom: 0;
+        div{
+          padding: 15px 20px;
+          border: 1px solid #e5e5e5;
+          border-top: none;
+          overflow: auto;
+          height: 100%;
         }
       }
     }
